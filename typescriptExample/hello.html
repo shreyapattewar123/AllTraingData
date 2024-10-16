@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello</h1>
+  <script>
+    console.log("hello");
+    function add() {
+            // Retrieve values from input fields
+            var a = document.getElementById("num1").value; // Corrected: use quotes for the id
+            var b = document.getElementById("num2").value; // Corrected: use quotes for the id
+            
+            // Parse the values as integers and calculate the sum
+            var ans = parseInt(a) + parseInt(b);
+            
+            // Display the result in the result paragraph
+            document.getElementById("result").innerText = "Addition is: " + ans; // Corrected: set innerText
+        }
+        function subtraction() {
+            // Retrieve values from input fields
+            var a = document.getElementById("num1").value; // Corrected: use quotes for the id
+            var b = document.getElementById("num2").value; // Corrected: use quotes for the id
+            
+            // Parse the values as integers and calculate the sum
+            var ans = parseInt(a) - parseInt(b);
+            
+            // Display the result in the result paragraph
+            document.getElementById("result").innerText =  ans; // Corrected: set innerText
+        }
+        function Multiplication() {
+            // Retrieve values from input fields
+            var a = document.getElementById("num1").value; // Corrected: use quotes for the id
+            var b = document.getElementById("num2").value; // Corrected: use quotes for the id
+            
+            // Parse the values as integers and calculate the sum
+            var ans = parseInt(a) * parseInt(b);
+            
+            // Display the result in the result paragraph
+            document.getElementById("result").innerText =   ans; // Corrected: set innerText
+        }
+        function divide() {
+            // Retrieve values from input fields
+            var a = document.getElementById("num1").value; // Corrected: use quotes for the id
+            var b = document.getElementById("num2").value; // Corrected: use quotes for the id
+            
+            // Parse the values as integers and calculate the sum
+            var ans = parseInt(a) / parseInt(b);
+            
+            // Display the result in the result paragraph
+            document.getElementById("result").innerText = ans; // Corrected: set innerText
+        }
+console.log(add(5,4));
+console.log(add(5,4));
+  </script>
+
+Enter the value: <input type="text" id="num1"><br>
+Enter the value: <input type="text" id="num2"><br>
+<input type="button" id="addf" value="+" onclick="add();"/>
+<input type="button" id="subf" value="-" onclick="subtraction();"/>
+<input type="button" id="mulf" value="*" onclick="Multiplication();"/>
+<input type="button" id="divf" value="/" onclick="divide();"/>
+<p id="result">result is:</p>
+</body>
+</html>

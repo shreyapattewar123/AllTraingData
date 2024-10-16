@@ -1,0 +1,11 @@
+var arr1 = ["shreya"];
+var arr2 = [1, 's'];
+console.log(arr1);
+// let arr1: Array<string> = ["blue","white","pink","yellow"];
+// let arr2:Array<boolean> = [true,false,false,false,true];
+var values = ['abc', 5, 9, 'tqw'];
+var values1 = ['uie', 3, 2, 1, 'jik'];
+console.log(arr1);
+console.log(arr2);
+console.log(values);
+console.log(values1);
